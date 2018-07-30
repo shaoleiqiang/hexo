@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>统一接口整理 | Hexo</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='John Doe'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">Hexo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa /img/home.png"></i>Home</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/前端/"><i class="fa "></i>前端</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/后端/"><i class="fa "></i>后端</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/工具/"><i class="fa "></i>工具</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>时间轴</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/关于我"><i class="fa "></i>关于我</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="统一接口整理">
+            
+	            统一接口整理
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/工具">
+            工具
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/tags3" title='tags3'>
+                        tags3
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2016/08/25</span>
+        </span>
+    
+</div>
+
+            
+            
+            <p class="fa fa-exclamation-triangle warning">
+                本文于<strong>703</strong>天之前发表，文中内容可能已经过时。
+            </p>
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h5 id="请求入参："><a href="#请求入参：" class="headerlink" title="请求入参："></a>请求入参：</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">head参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">是否必填</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">agentId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">代理商编码</td>
+</tr>
+<tr>
+<td style="text-align:center">authCode</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">授权码</td>
+</tr>
+<tr>
+<td style="text-align:center">authPwd</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">授权密码（MD5加密）</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">是否必填</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchMorderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">商户充值订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchProduct</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值产品编号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值产品类型</td>
+</tr>
+<tr>
+<td style="text-align:center">rchTime</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值提交时间 YYYYMMDDHHmmSS</td>
+</tr>
+<tr>
+<td style="text-align:center">sign</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">sign标识</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sign = MD5(agentId+authCode+authPwd+rchMorderId+rchAccount+rchProduct+rchType+rchTime)</span><br></pre></td></tr></table></figure>
+<h6 id="请求验证流程"><a href="#请求验证流程" class="headerlink" title="请求验证流程"></a>请求验证流程</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[开始]--&gt;B[参数校验]</span><br><span class="line">B--&gt;C[时间校验]</span><br><span class="line">C--&gt;D[sign标识校验]</span><br><span class="line">D--&gt;E[白名单]</span><br><span class="line">E--&gt;F[授权码]</span><br><span class="line">F--&gt;G[产品查找商品]</span><br><span class="line">G--&gt;H[扣费]</span><br><span class="line">H--&gt;I[入库]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line"></span><br><span class="line">A[Start] --&gt; B[Your Operation]</span><br><span class="line">B --&gt; C&#123;Yes or No?&#125;</span><br><span class="line">C --&gt; |yes| D[end]</span><br><span class="line">C --&gt; |no| B</span><br></pre></td></tr></table></figure>
+<hr>
+<h5 id="响应出参："><a href="#响应出参：" class="headerlink" title="响应出参："></a>响应出参：</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchMorderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商户充值订单号(确保唯一)</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td>充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td>充值产品类型</td>
+</tr>
+<tr>
+<td style="text-align:center">rchOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台充值订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rtCode</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台响应状态（0000提交成功）</td>
+</tr>
+<tr>
+<td style="text-align:center">rtMsg</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台响应状态描述</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h5 id="回调通知参数："><a href="#回调通知参数：" class="headerlink" title="回调通知参数："></a>回调通知参数：</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchMorderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商户充值订单号(确保唯一)</td>
+</tr>
+<tr>
+<td style="text-align:center">rchOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台充值订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchProduct</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值产品编号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值产品类型</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">orderDesc</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台订单状态描述 </td>
+</tr>
+</tbody>
+</table>
+<h6 id="回调参数说明："><a href="#回调参数说明：" class="headerlink" title="回调参数说明："></a>回调参数说明：</h6><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数值</th>
+<th style="text-align:center">参数值描述</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">充值中</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">充值成功</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">充值失败</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2016/08/25/hello-world-2/" class="pre-post btn btn-default" title='Hello World'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">Hello World</span>
+        </a>
+    
+    
+        <a href="/2016/08/25/hello-world/" class="next-post btn btn-default" title='欢迎使用 Cmd Markdown 编辑阅读器'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">欢迎使用 Cmd Markdown 编辑阅读器</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+    
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+            appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: ''.toLowerCase()
+        })
+    </script>
+
+
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">Table of Contents</h3>
+        
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#请求入参："><span class="toc-text">请求入参：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#请求验证流程"><span class="toc-text">请求验证流程</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#响应出参："><span class="toc-text">响应出参：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#回调通知参数："><span class="toc-text">回调通知参数：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#回调参数说明："><span class="toc-text">回调参数说明：</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2017
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>

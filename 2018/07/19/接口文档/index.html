@@ -1,0 +1,912 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>数字虚拟运营平台统一接口说明 | Hexo</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='John Doe'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">Hexo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa /img/home.png"></i>Home</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/前端/"><i class="fa "></i>前端</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/后端/"><i class="fa "></i>后端</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/工具/"><i class="fa "></i>工具</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>时间轴</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/关于我"><i class="fa "></i>关于我</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="数字虚拟运营平台统一接口说明">
+            
+	            数字虚拟运营平台统一接口说明
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/前端">
+            前端
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/接口" title='接口'>
+                        接口
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/07/19</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="数字虚拟运营平台统一接口说明"><a href="#数字虚拟运营平台统一接口说明" class="headerlink" title="数字虚拟运营平台统一接口说明"></a><center>数字虚拟运营平台统一接口说明</center></h1><table>
+<thead>
+<tr>
+<th style="text-align:center">修订人</th>
+<th style="text-align:center">修订时间</th>
+<th style="text-align:center">版本号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">邵雷强</td>
+<td style="text-align:center">2018-07-19 11:43</td>
+<td style="text-align:center">V1.0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h3><h4 id="1-1-接口协议"><a href="#1-1-接口协议" class="headerlink" title="1.1 接口协议"></a>1.1 接口协议</h4><p>&ensp;&ensp;&ensp;&ensp;本系统对外接口基于<strong>HTTP</strong>协议构建，理论上可给所有支持HTTP协议的平台均提供接口服务。</p>
+<h4 id="1-2-数据格式"><a href="#1-2-数据格式" class="headerlink" title="1.2 数据格式"></a>1.2 数据格式</h4><p>&ensp;&ensp;&ensp;&ensp;如无特殊说明，本系统对外接口一律采用<strong>JSON</strong>数据格式。</p>
+<h4 id="1-3-提交方式"><a href="#1-3-提交方式" class="headerlink" title="1.3 提交方式"></a>1.3 提交方式</h4><p>&ensp;&ensp;&ensp;&ensp;如无特殊说明，本系统对外接口一律采用<strong>POST</strong>方式提交</p>
+<h4 id="1-4-字符集"><a href="#1-4-字符集" class="headerlink" title="1.4 字符集"></a>1.4 字符集</h4><p>&ensp;&ensp;&ensp;&ensp;如无特殊说明，本系统对外接口一律采用<strong>UTF-8</strong>数据格式。</p>
+<h4 id="1-5-接口授权"><a href="#1-5-接口授权" class="headerlink" title="1.5 接口授权"></a>1.5 接口授权</h4><p>&ensp;&ensp;&ensp;&ensp;第三方系统与本系统对接前，需先联系我公司商务（或销售）部门申请接入授权码。<br></p>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>全局定义</strong>:</p>
+<ul>
+<li>接口地址 ：请联系业务人员提供</li>
+<li>agentId  ：代理商编码，请联系业务人员提供。</li>
+<li>authCode ：接入授权码，请联系业务人员提供。</li>
+<li>authPwd  ：接入密码，请联系业务人员提供。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">head参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">是否必填</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">agentId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">代理商编码</td>
+</tr>
+<tr>
+<td style="text-align:center">authCode</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">授权码</td>
+</tr>
+<tr>
+<td style="text-align:center">authPwd</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">授权密码（MD5加密）</td>
+</tr>
+</tbody>
+</table>
+<p>java例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">HttpClient client = new HttpClient();</span><br><span class="line">PostMethod postMethod = new PostMethod(url);</span><br><span class="line">postMethod.addRequestHeader(&quot;agentid&quot;, agentid);</span><br><span class="line">postMethod.addRequestHeader(&quot;authcode&quot;, authcode);</span><br><span class="line">postMethod.addRequestHeader(&quot;authpwd&quot;,加密后的&#123; authpwd &#125;值);</span><br></pre></td></tr></table></figure>
+<h3 id="第二章-充值接口"><a href="#第二章-充值接口" class="headerlink" title="第二章 充值接口"></a>第二章 充值接口</h3><h4 id="2-1-接口描述"><a href="#2-1-接口描述" class="headerlink" title="2.1 接口描述"></a>2.1 接口描述</h4><p>&ensp;&ensp;&ensp;&ensp;本接口支持 流量充值、话费充值、视频卡类直充、卡券卡密提取到手机号服务。</p>
+<h4 id="2-2-请求地址"><a href="#2-2-请求地址" class="headerlink" title="2.2 请求地址"></a>2.2 请求地址</h4><p>&ensp;&ensp;&ensp;&ensp;请联系业务运营人员提供。</p>
+<h4 id="2-3-请求参数"><a href="#2-3-请求参数" class="headerlink" title="2.3 请求参数"></a>2.3 请求参数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;rchProduct&quot;: &quot;XXXXXX&quot;,</span><br><span class="line">    &quot;rchType&quot;: &quot;423&quot;,</span><br><span class="line">    &quot;rchAccount&quot;: &quot;XXXXXX&quot;,</span><br><span class="line">    &quot;sign&quot;: &quot;77938b6132823423e04d9bfa1c13e7bd&quot;,</span><br><span class="line">    &quot;reqTime&quot;: &quot;20171110161128&quot;,</span><br><span class="line">    &quot;rchMOrdeid&quot;: &quot;AOD17111016112848362432&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">是否必填</th>
+<th style="text-align:center">备注 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchMorderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">商户充值订单号,确保唯一</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchProduct</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值产品编号,联系运营提供</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值产品类型见5.2</td>
+</tr>
+<tr>
+<td style="text-align:center">rchTime</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值提交时间格式 yyyyMMddHHmmss</td>
+</tr>
+<tr>
+<td style="text-align:center">sign</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">sign标识 MD5小写</td>
+</tr>
+</tbody>
+</table>
+<p>sign加密规则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MD5(agentId + authCode + authPwd + rchAccount + rchProduct + rchType + reqTime + rchMOrderId)</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-4-响应报文"><a href="#2-4-响应报文" class="headerlink" title="2.4 响应报文"></a>2.4 响应报文</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;rtCode&quot;: &quot;0000&quot;,</span><br><span class="line">    &quot;rtMsg&quot;: &quot;提交成功&quot;,</span><br><span class="line">    &quot;rchAccount&quot;: &quot;1048645260&quot;,</span><br><span class="line">    &quot;rchMOrderId&quot;: &quot;AOD17111016112848362432&quot;,</span><br><span class="line">    &quot;rchOrderId&quot;: &quot;TKCQOD17111016112968835932&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>响应报文说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">描述 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchMorderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商户充值订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值产品类型</td>
+</tr>
+<tr>
+<td style="text-align:center">rchOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台充值订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rtCode</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台响应状态（0000提交成功）</td>
+</tr>
+<tr>
+<td style="text-align:center">rtMsg</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台响应状态描述</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="第三章-订单查询接口"><a href="#第三章-订单查询接口" class="headerlink" title="第三章 订单查询接口"></a>第三章 订单查询接口</h3><h4 id="3-1-接口描述"><a href="#3-1-接口描述" class="headerlink" title="3.1 接口描述"></a>3.1 接口描述</h4><p>&ensp;&ensp;&ensp;&ensp;根据平台订单号或者商户订单号查询订单充值状态信息。</p>
+<h4 id="3-2-接口地址"><a href="#3-2-接口地址" class="headerlink" title="3.2 接口地址"></a>3.2 接口地址</h4><p>&ensp;&ensp;&ensp;&ensp;请联系运营人员提供</p>
+<h4 id="3-3-请求参数"><a href="#3-3-请求参数" class="headerlink" title="3.3 请求参数"></a>3.3 请求参数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;rchType&quot;: &quot;423&quot;,</span><br><span class="line">    &quot;sign&quot;: &quot;54b31ab729048bc2d51edec17cdfb343&quot;,</span><br><span class="line">    &quot;reqTime&quot;: &quot;20171115150638&quot;,</span><br><span class="line">    &quot;rchOrderId&quot;: &quot;TKCQOD17111016112968835932&quot;,</span><br><span class="line">    &quot;rchMOrderId&quot;: &quot;10020171031140106160716&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">是否必填</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">平台订单号    </td>
+</tr>
+<tr>
+<td style="text-align:center">rchMOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">代理商订单号    </td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">充值类型</td>
+</tr>
+<tr>
+<td style="text-align:center">reqTime</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">请求时间    </td>
+</tr>
+<tr>
+<td style="text-align:center">sign</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">校验标识    </td>
+</tr>
+</tbody>
+</table>
+<p>sign加密规则：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MD5(agentId + authCode + authPwd + rchOrderId + rchMOrderId + rchType + reqTime)</span><br></pre></td></tr></table></figure>
+<h4 id="3-4-响应报文"><a href="#3-4-响应报文" class="headerlink" title="3.4 响应报文"></a>3.4 响应报文</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;finishTime&quot;: &quot;2017-11-10 16:11:45&quot;,</span><br><span class="line">    &quot;rtMsg&quot;: &quot;订单查询成功&quot;,</span><br><span class="line">    &quot;rchProduct&quot;: &quot; XXXXXX &quot;,</span><br><span class="line">    &quot;rtCode&quot;: &quot;2000&quot;,</span><br><span class="line">    &quot;rchType&quot;: &quot;4&quot;,</span><br><span class="line">    &quot;rchAccount&quot;: &quot; XXXXXX &quot;,</span><br><span class="line">    &quot;orderStatus&quot;: &quot;2&quot;,</span><br><span class="line">    &quot;rchMOrdeid&quot;: &quot;10020171031140106160716&quot;,</span><br><span class="line">    &quot;rchOrdeid&quot;: &quot;TKCQOD17111016112968835932&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rtCode</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">返回编码    </td>
+</tr>
+<tr>
+<td style="text-align:center">rtMsg</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">返回描述    </td>
+</tr>
+<tr>
+<td style="text-align:center">rchOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchMOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">代理商订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值类型</td>
+</tr>
+<tr>
+<td style="text-align:center">rchProduct</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值产品    </td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">finishTime</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">完成时间 yyyy-MM-dd hh:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="第四章-回调代理商通知接口"><a href="#第四章-回调代理商通知接口" class="headerlink" title="第四章 回调代理商通知接口"></a>第四章 回调代理商通知接口</h3><h4 id="4-1-接口描述"><a href="#4-1-接口描述" class="headerlink" title="4.1 接口描述"></a>4.1 接口描述</h4><p>&ensp;&ensp;&ensp;&ensp;代理商提交成功后，系统处理成功后回调代理商通知接口，告知成功失败。</p>
+<h4 id="4-2-接口地址"><a href="#4-2-接口地址" class="headerlink" title="4.2 接口地址"></a>4.2 接口地址</h4><p>&ensp;&ensp;&ensp;&ensp;代理商提供</p>
+<h4 id="4-3-请求参数"><a href="#4-3-请求参数" class="headerlink" title="4.3 请求参数"></a>4.3 请求参数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;finishTime&quot;: &quot;2017-11-10 16:11:29&quot;,</span><br><span class="line">    &quot;rchProduct&quot;: &quot;XXX&quot;,</span><br><span class="line">    &quot;rchType&quot;: &quot;425&quot;,</span><br><span class="line">    &quot;orderStatusDesc&quot;: &quot;充值成功&quot;,</span><br><span class="line">    &quot;rchAccount&quot;: &quot;XXXXXX&quot;,</span><br><span class="line">    &quot;orderStatus&quot;: &quot;2&quot;,</span><br><span class="line">    &quot;rchOrdeid&quot;: &quot;TKCQOD17111016112968835932&quot;,</span><br><span class="line">    &quot;rchMOrdeid&quot;: &quot;10020171031140106160716&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数类型</th>
+<th style="text-align:center">描述 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchMorderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">商户充值订单号(确保唯一)</td>
+</tr>
+<tr>
+<td style="text-align:center">rchOrderId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台充值订单号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchAccount</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值账号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchProduct</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值产品编号</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">充值产品类型</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatusDesc</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">平台订单状态描述 </td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-4-响应报文"><a href="#4-4-响应报文" class="headerlink" title="4.4 响应报文"></a>4.4 响应报文</h4><p>&ensp;&ensp;&ensp;&ensp;代理方接收成功返回字符串： ”success”</p>
+<hr>
+<h3 id="第五章-业务接口参数说明"><a href="#第五章-业务接口参数说明" class="headerlink" title="第五章 业务接口参数说明"></a>第五章 业务接口参数说明</h3><h4 id="5-1-订单状态-orderStatus"><a href="#5-1-订单状态-orderStatus" class="headerlink" title="5.1 订单状态 orderStatus"></a>5.1 订单状态 orderStatus</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数值</th>
+<th style="text-align:center">参数值描述</th>
+<th style="text-align:center">备注 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">充值中</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">充值成功</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+<tr>
+<td style="text-align:center">orderStatus</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">充值失败</td>
+<td style="text-align:center">平台订单状态</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-2-充值类型-rchType"><a href="#5-2-充值类型-rchType" class="headerlink" title="5.2 充值类型 rchType"></a>5.2 充值类型 rchType</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">参数值</th>
+<th style="text-align:center">参数值描述</th>
+<th style="text-align:center">备注 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">000</td>
+<td style="text-align:center">流量</td>
+<td style="text-align:center">移动</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">001</td>
+<td style="text-align:center">流量</td>
+<td style="text-align:center">联通</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">002</td>
+<td style="text-align:center">流量</td>
+<td style="text-align:center">电信</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">话费</td>
+<td style="text-align:center">移动 </td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">101</td>
+<td style="text-align:center">话费</td>
+<td style="text-align:center">联通</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">102</td>
+<td style="text-align:center">话费</td>
+<td style="text-align:center">电信</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">421</td>
+<td style="text-align:center">卡密提取</td>
+<td style="text-align:center">卡号卡密</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">422</td>
+<td style="text-align:center">卡密提取</td>
+<td style="text-align:center">字串</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">423</td>
+<td style="text-align:center">卡券直充</td>
+<td style="text-align:center">腾讯Q币</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">4241</td>
+<td style="text-align:center">卡券直充</td>
+<td style="text-align:center">腾讯视频</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">425</td>
+<td style="text-align:center">卡券直充</td>
+<td style="text-align:center">联通积分</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">426</td>
+<td style="text-align:center">卡券直充</td>
+<td style="text-align:center">优酷视频</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">427</td>
+<td style="text-align:center">卡券直充</td>
+<td style="text-align:center">爱奇艺视频</td>
+</tr>
+<tr>
+<td style="text-align:center">rchType</td>
+<td style="text-align:center">428</td>
+<td style="text-align:center">卡券直充</td>
+<td style="text-align:center">QQ音乐 </td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-3-充值产品-rchProduct"><a href="#5-3-充值产品-rchProduct" class="headerlink" title="5.3 充值产品 rchProduct"></a>5.3 充值产品 rchProduct</h4><p>&ensp;&ensp;&ensp;&ensp;注： 以下充值产品都需平台运营人员配置审核之后才可充值</p>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>流量充值产品：</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品类型</th>
+<th>产品编码</th>
+<th>产品名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>YDHF10</td>
+<td>移动话费10元</td>
+<td></td>
+</tr>
+<tr>
+<td>001</td>
+<td>LTHF10</td>
+<td>联通话费10元</td>
+<td></td>
+</tr>
+<tr>
+<td>002</td>
+<td>DXHF10</td>
+<td>电信话费10元</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>话费充值产品：</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品类型</th>
+<th>产品编码</th>
+<th>产品名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>YDQG010200M</td>
+<td>移动全国流量200M</td>
+<td></td>
+</tr>
+<tr>
+<td>101</td>
+<td>LTQG010200M</td>
+<td>联通全国流量200M</td>
+<td></td>
+</tr>
+<tr>
+<td>102</td>
+<td>DXQG010200M</td>
+<td>电信全国流量200M</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>卡密提取产品：</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品类型</th>
+<th>产品编码</th>
+<th>产品名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>421</td>
+<td>TKJDK001</td>
+<td>京东E卡5元</td>
+<td></td>
+</tr>
+<tr>
+<td>422</td>
+<td>TKZSH001</td>
+<td>中石化加油卡100元</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&ensp;&ensp;&ensp;&ensp;<strong>卡券直充产品：</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品类型</th>
+<th>产品编码</th>
+<th>产品名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>423</td>
+<td>TXQQB001</td>
+<td>腾讯QQ币1元</td>
+<td></td>
+</tr>
+<tr>
+<td>423</td>
+<td>TXQQB005</td>
+<td>腾讯QQ币5元</td>
+<td></td>
+</tr>
+<tr>
+<td>423</td>
+<td>TXQQB010</td>
+<td>腾讯QQ币10元</td>
+<td></td>
+</tr>
+<tr>
+<td>423</td>
+<td>TXQQB030</td>
+<td>腾讯QQ币30元</td>
+<td></td>
+</tr>
+<tr>
+<td>4241</td>
+<td>TXSP001</td>
+<td>腾讯视频VIP周卡</td>
+<td></td>
+</tr>
+<tr>
+<td>4241</td>
+<td>TXSP002</td>
+<td>腾讯视频VIP月卡</td>
+<td></td>
+</tr>
+<tr>
+<td>4241</td>
+<td>TXSP004</td>
+<td>腾讯视频VIP年卡</td>
+<td></td>
+</tr>
+<tr>
+<td>425</td>
+<td>ZGLTJF001</td>
+<td>中国联通100积分</td>
+<td></td>
+</tr>
+<tr>
+<td>426</td>
+<td>YKTD001</td>
+<td>优酷土豆黄金会员周卡</td>
+<td></td>
+</tr>
+<tr>
+<td>426</td>
+<td>YKTD002</td>
+<td>优酷土豆黄金会员月卡</td>
+<td></td>
+</tr>
+<tr>
+<td>427</td>
+<td>AQYVIP001</td>
+<td>爱奇艺黄金会员月卡</td>
+<td></td>
+</tr>
+<tr>
+<td>428</td>
+<td>QQYY001</td>
+<td>QQ音乐会员绿钻豪华版一个月</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="第六章-接口实现代码块"><a href="#第六章-接口实现代码块" class="headerlink" title="第六章 接口实现代码块"></a>第六章 接口实现代码块</h3><h4 id="6-1-JAVA版接口请求"><a href="#6-1-JAVA版接口请求" class="headerlink" title="6.1 JAVA版接口请求"></a>6.1 JAVA版接口请求</h4><h4 id="6-2-NET版本接口请求"><a href="#6-2-NET版本接口请求" class="headerlink" title="6.2 .NET版本接口请求"></a>6.2 .NET版本接口请求</h4><h4 id="6-3-JAVA版卡券解密"><a href="#6-3-JAVA版卡券解密" class="headerlink" title="6.3 JAVA版卡券解密"></a>6.3 JAVA版卡券解密</h4>
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/08/25/流程图/" class="pre-post btn btn-default" title='画流程图'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">画流程图</span>
+        </a>
+    
+    
+        <a href="/2016/08/25/hello-world-2/" class="next-post btn btn-default" title='Hello World'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">Hello World</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+    
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+            appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: ''.toLowerCase()
+        })
+    </script>
+
+
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">Table of Contents</h3>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数字虚拟运营平台统一接口说明"><span class="toc-text">数字虚拟运营平台统一接口说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一章-概述"><span class="toc-text">第一章 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-接口协议"><span class="toc-text">1.1 接口协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-数据格式"><span class="toc-text">1.2 数据格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-提交方式"><span class="toc-text">1.3 提交方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-字符集"><span class="toc-text">1.4 字符集</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-接口授权"><span class="toc-text">1.5 接口授权</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二章-充值接口"><span class="toc-text">第二章 充值接口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-接口描述"><span class="toc-text">2.1 接口描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-请求地址"><span class="toc-text">2.2 请求地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-请求参数"><span class="toc-text">2.3 请求参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-响应报文"><span class="toc-text">2.4 响应报文</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三章-订单查询接口"><span class="toc-text">第三章 订单查询接口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-接口描述"><span class="toc-text">3.1 接口描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-接口地址"><span class="toc-text">3.2 接口地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-请求参数"><span class="toc-text">3.3 请求参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-响应报文"><span class="toc-text">3.4 响应报文</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第四章-回调代理商通知接口"><span class="toc-text">第四章 回调代理商通知接口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-接口描述"><span class="toc-text">4.1 接口描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-接口地址"><span class="toc-text">4.2 接口地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-请求参数"><span class="toc-text">4.3 请求参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-响应报文"><span class="toc-text">4.4 响应报文</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第五章-业务接口参数说明"><span class="toc-text">第五章 业务接口参数说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-订单状态-orderStatus"><span class="toc-text">5.1 订单状态 orderStatus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-充值类型-rchType"><span class="toc-text">5.2 充值类型 rchType</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-充值产品-rchProduct"><span class="toc-text">5.3 充值产品 rchProduct</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第六章-接口实现代码块"><span class="toc-text">第六章 接口实现代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-JAVA版接口请求"><span class="toc-text">6.1 JAVA版接口请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-NET版本接口请求"><span class="toc-text">6.2 .NET版本接口请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-JAVA版卡券解密"><span class="toc-text">6.3 JAVA版卡券解密</span></a></li></ol></li></ol></li></ol></li></ol>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2017
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>
